@@ -159,7 +159,7 @@ int main(int argc, char** argv) {
 		animate = false;
 	}
 
-	printf_s("%d",sum(7,7));
+	printf_s("%d",sum(7,7,7));
 
 	SDL_DestroyTexture(back_tex);
 	SDL_DestroyTexture(player_tex);
