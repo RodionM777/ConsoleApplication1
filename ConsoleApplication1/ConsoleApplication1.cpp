@@ -1,7 +1,7 @@
 ﻿#include<SDL.h>
+#include<D:\GitPrograms\ConsoleApplication1\header2.h>
 #include<stdio.h>
 #include<SDL_image.h>
-
 #define WIDTH 1920
 #define HEIGHT 1080
 #define RIGHT 1
@@ -159,7 +159,7 @@ int main(int argc, char** argv) {
 		animate = false;
 	}
 
-	printf_s("777");
+	printf_s("%d",sum(7,7));
 
 	SDL_DestroyTexture(back_tex);
 	SDL_DestroyTexture(player_tex);
