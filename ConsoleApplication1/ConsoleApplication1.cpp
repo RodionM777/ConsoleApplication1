@@ -158,7 +158,7 @@ int main(int argc, char** argv) {
 		SDL_Delay(20);
 		animate = false;
 	}
-
+	printf("hello");
 	printf_s("%d",sum(7,7,7));
 
 	SDL_DestroyTexture(back_tex);
