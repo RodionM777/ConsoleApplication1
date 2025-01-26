@@ -129,10 +129,10 @@ int main(int argc, char** argv) {
 			
 			}
 		}
-		if (isup && !isdown) y -= 10, animate = true ;
-		if (isdown && !isup) y += 10, animate = true  ;
-		if (isleft&&!isright) x -= 10, animate = true,direction=LEFT;
-		if (isright&&!isleft)x += 10, animate = true,direction=RIGHT;
+		if (isup && !isdown) y -= 1, animate = true ;
+		if (isdown && !isup) y += 1, animate = true  ;
+		if (isleft&&!isright) x -= 1, animate = true,direction=LEFT;
+		if (isright&&!isleft)x += 1, animate = true,direction=RIGHT;
 		newtime = SDL_GetTicks();
 		dt = newtime - lasttime;
 		lasttime = newtime;
@@ -159,7 +159,7 @@ int main(int argc, char** argv) {
 		animate = false;
 	}
 
-
+	printf_s("777");
 
 	SDL_DestroyTexture(back_tex);
 	SDL_DestroyTexture(player_tex);
